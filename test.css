@@ -1,0 +1,65 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+h1{
+    margin: 0;
+}
+
+.menu-icon{
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+nav{
+    margin-left: auto;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 2rem;
+}
+
+nav ul li{
+    margin-right: 20px;
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+@media only screen and (max-width:768px) {
+    .menu-icon{
+        display: block;
+    }
+
+    nav{
+        display: none;
+    }
+
+    input[type="checkbox"]{
+        display: none;
+    }
+    
+    #menu-toggle:checked + header nav ul li a{
+        display: block;
+    }
+    
+
+
+}
